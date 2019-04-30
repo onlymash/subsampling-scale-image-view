@@ -64,7 +64,7 @@ public class ViewPagerActivity extends AbstractPagesActivity {
 
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         ScreenSlidePagerAdapter(FragmentManager fm) {
-            super(fm);
+            super(fm, FragmentStatePagerAdapter.RESUME_ONLY_CURRENT_FRAGMENT);
         }
 
         @Override

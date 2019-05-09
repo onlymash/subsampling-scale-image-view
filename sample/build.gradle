@@ -13,10 +13,14 @@ android {
             assets.srcDirs = ['assets']
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
     implementation project(':library')
-    implementation 'androidx.fragment:fragment:1.1.0-alpha07'
-    implementation 'androidx.core:core:1.1.0-alpha05'
+    implementation 'androidx.fragment:fragment:1.1.0-alpha08'
+    implementation 'androidx.core:core:1.2.0-alpha01'
 }

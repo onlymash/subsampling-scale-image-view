@@ -2,6 +2,8 @@ package com.davemorrissey.labs.subscaleview.test;
 
 import android.app.ActionBar;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 
@@ -48,7 +50,7 @@ public abstract class AbstractFragmentsActivity extends FragmentActivity {
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(BUNDLE_PAGE, page);
     }

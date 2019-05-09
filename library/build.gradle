@@ -12,6 +12,10 @@ android {
         targetSdkVersion 28
         consumerProguardFiles 'proguard-rules.txt'
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 configurations {
@@ -20,8 +24,8 @@ configurations {
 
 dependencies {
     javadocs 'androidx.exifinterface:exifinterface:1.1.0-alpha01'
-    javadocs 'androidx.annotation:annotation:1.1.0-beta01'
-    implementation 'androidx.annotation:annotation:1.1.0-beta01'
+    javadocs 'androidx.annotation:annotation:1.1.0-rc01'
+    implementation 'androidx.annotation:annotation:1.1.0-rc01'
     implementation 'androidx.exifinterface:exifinterface:1.1.0-alpha01'
 }
 

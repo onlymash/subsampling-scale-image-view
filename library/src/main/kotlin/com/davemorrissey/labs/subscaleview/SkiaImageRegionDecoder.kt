@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.AssetManager
 import android.graphics.*
 import android.net.Uri
+import android.os.Build
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView.Companion.ASSET_PREFIX
 import java.io.InputStream
 import java.util.concurrent.locks.ReentrantReadWriteLock
@@ -31,7 +32,7 @@ class SkiaImageRegionDecoder : ImageRegionDecoder {
                 } finally {
                     try {
                         inputStream?.close()
-                    } catch (e: Exception) {
+                    } catch (_: Exception) {
                     }
                 }
             }
